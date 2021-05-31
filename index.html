@@ -22,11 +22,10 @@
 
 <body>
     <form>
-        <div class="contatiner-fluid">
-            <div class="head">
-                <h1>Payment form example</h1>
+        <div class="contatiner-fluid border border-secondary">
+            <div class="head border border-secondary bg-light">
+                <span class="border border-secondary"><h1>Payment form example</h1></span>
             </div>
-
 
             <div class="form-row">
                 <div class="form-group col-md-5">
@@ -120,8 +119,10 @@
                     <input type="text" class="form-control" id="inputPostalCode">
                 </div>
             </div>
-            <div class="form-group col-md-4">
-                <div class="form-check bg-secondary">
+
+            <div class="form-group col-md-2">
+                <p>We accept:</p>
+                <div class="form-check bg-secondary text-center">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                             value="option1">
@@ -142,19 +143,21 @@
                             value="option4">
                         <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-amex"></i></label>
                     </div>
-                    <div class="form-group col-md-6 float-right">
+                </div>
+                <div class="form-group">
+                        <span class="d-flex justify-content-end form-check-inline">
                         <label for="FormControlMessageArea">Message</label>
-                        <textarea class="form-control" id="exampleFormControlMessageArea" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlMessageArea" rows="6"></textarea>
+                        <p>Add any notes here.</p>
                         </select>
-                    </div>
+                        </span>
                 </div>
                 
-            <div>
-                
             </div>
-            <div class="row d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
+                <div class="row d-flex justify-content-end mr-auto border border- secondary bg-light">
+                    <button type="submit" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
         </div>
 
     </form>
