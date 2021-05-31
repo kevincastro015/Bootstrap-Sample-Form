@@ -5,13 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,20 +17,20 @@
 </head>
 
 <body>
-    <form>
-        <div class="contatiner-fluid border border-secondary">
-            <div class="head border border-secondary bg-light">
-                <span class="border border-secondary"><h1>Payment form example</h1></span>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group col-md-5">
-                    <label for="inputEmail4">Card #</label>
-                    <input type="Card #" class="form-control" id="inputCard#" placeholder="XXXXXXXXXXXXXXX">
-                </div>
-                <div class="form-group col-md-3">
-                    <label for="inputPassword4">CVC #</label>
-                    <input type="CVC#" class="form-control" id="inputCVC#" placeholder="0000">
+    <form class="p-5">
+      
+        <div class="head border border-secondary bg-light">
+                <h1>Payment form example</h1>
+        </div>
+        <div class="contatiner-fluid border border-secondary p-2">
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="inputEmail4">Card #</label>
+                        <input type="Card #" class="form-control" id="inputCard#" placeholder="XXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">CVC #</label>
+                        <input type="CVC#" class="form-control" id="inputCVC#" placeholder="0000">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputPassword4">Amount</label>
@@ -119,50 +115,54 @@
                     <input type="text" class="form-control" id="inputPostalCode">
                 </div>
             </div>
-
-            <div class="form-group col-md-2">
-                <p>We accept:</p>
-                <div class="form-check bg-secondary text-center">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-mastercard"></i></label>
+            <!-- This row is for the payment method -->
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <p class="ml-3">We accept:</p>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa"></i></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="option3">
-                        <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-diners-club"></i></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="option4">
-                        <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-amex"></i></label>
+                    <div class="bg-secondary col-4 rounded">
+                        <div class="form-check form-check-inline my-2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><i
+                                    class="fab fa-cc-mastercard fa-lg"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline my-2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa fa-lg"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline my-2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio3"><i
+                                    class="fab fa-cc-diners-club fa-lg"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline my-2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option4">
+                            <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-amex fa-lg"></i></label>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                        <span class="d-flex justify-content-end form-check-inline">
-                        <label for="FormControlMessageArea">Message</label>
-                        <textarea class="form-control" id="exampleFormControlMessageArea" rows="6"></textarea>
+                <!-- This row is for the Message Area -->
+                <div class="col">
+                    <div class="row">
+                        <p>Message</p>
+                    </div>
+                    <textarea class="form-control" id="exampleFormControlMessageArea" rows="6"></textarea>
                         <p>Add any notes here.</p>
-                        </select>
-                        </span>
                 </div>
-                
             </div>
-                <div class="row d-flex justify-content-end mr-auto border border- secondary bg-light">
+            <div class="row justify-content-end p-3 border-top border-secondary">
                     <button type="submit" class="btn btn-secondary">Cancel</button>
                     <button type="submit" class="btn btn-primary">Send</button>
-                </div>
+            </div>  
         </div>
 
     </form>
-
-
+    
 </body>
 
 </html>
